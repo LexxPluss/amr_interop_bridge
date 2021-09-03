@@ -1,0 +1,30 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(interop_msgs)
+
+find_package(catkin REQUIRED COMPONENTS
+  std_msgs
+  geometry_msgs
+  message_generation
+)
+
+add_message_files(
+  FILES
+  Location.msg
+  Velocity.msg
+  ErrorCodes.msg
+  PredictedLocation.msg
+  PredictedLocations.msg
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+  geometry_msgs
+)
+
+catkin_package(
+  CATKIN_DEPENDS
+  message_runtime
+  std_msgs
+  geometry_msgs
+)

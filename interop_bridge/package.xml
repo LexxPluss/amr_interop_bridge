@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>interop_bridge</name>
+  <version>0.1.0</version>
+  <description>The interop_bridge package</description>
+  <maintainer email="yasuyuki.miura@lexxpluss.com">MIURA Yasuyuki</maintainer>
+  <license>BSD</license>
+
+  <url type="bugtracker">https://github.com/LexxPluss/amr_interop_bridge/issues</url>
+  <url type="repository">https://github.com/LexxPluss/amr_interop_bridge</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>interop_msgs</depend>
+
+  <depend>python-pytz-pip</depend>
+  <depend>python-websocket</depend>
+</package>
