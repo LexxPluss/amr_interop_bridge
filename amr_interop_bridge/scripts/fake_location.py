@@ -3,7 +3,7 @@
 
 import rospy
 from geometry_msgs.msg import Quaternion
-from interop_msgs.msg import Location
+from amr_interop_msgs.msg import Location
 import uuid
 
 if __name__ == "__main__":

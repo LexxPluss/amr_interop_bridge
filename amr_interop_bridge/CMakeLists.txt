@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(interop_bridge)
+project(amr_interop_bridge)
 
 find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   geometry_msgs
-  interop_msgs
+  amr_interop_msgs
 )
 
 catkin_package(
@@ -13,7 +13,7 @@ catkin_package(
   rospy
   std_msgs
   geometry_msgs
-  interop_msgs
+  amr_interop_msgs
 )
 
 catkin_install_python(PROGRAMS
@@ -41,7 +41,7 @@ catkin_install_python(PROGRAMS
   scripts/fake_thumnail_image.py
   scripts/fake_uuid.py
   scripts/fake_velocity.py
-  scripts/interop_bridge.py
+  scripts/amr_interop_bridge.py
 
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

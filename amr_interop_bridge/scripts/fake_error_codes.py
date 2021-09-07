@@ -3,7 +3,7 @@
 
 import rospy
 from std_msgs.msg import String
-from interop_msgs.msg import ErrorCodes
+from amr_interop_msgs.msg import ErrorCodes
 import random
 
 ERROR_CODES = [
