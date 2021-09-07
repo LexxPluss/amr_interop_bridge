@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(interop_msgs)
+project(amr_interop_msgs)
 
 find_package(catkin REQUIRED COMPONENTS
   std_msgs

@@ -42,15 +42,15 @@ $ source devel/setup.bash
 
 #### example1 : send minimum required
 ```
-$ roslaunch interop_bridge interop_bridge_required.launch
+$ roslaunch amr_interop_bridge amr_interop_bridge_required.launch
 ```
 
 #### example2 : send minimum required ( specify the server. by default, connect to ws://localhost:3000 )
 ```
-$ roslaunch interop_bridge interop_bridge_required.launch url:=ws://SERVER-ADDRESS
+$ roslaunch amr_interop_bridge amr_interop_bridge_required.launch url:=ws://SERVER-ADDRESS
 ```
 
 #### example3 : send full properties
 ```
-$ roslaunch interop_bridge interop_bridge_full.launch
+$ roslaunch amr_interop_bridge amr_interop_bridge_full.launch
 ```

@@ -3,31 +3,31 @@
   <arg name="url" default="ws://localhost:3000"/>
 
   <!-- required -->
-  <node name="fake_uuid" pkg="interop_bridge" type="fake_uuid.py">
+  <node name="fake_uuid" pkg="amr_interop_bridge" type="fake_uuid.py">
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_manufacture_name" pkg="interop_bridge" type="fake_manufacture_name.py">
+  <node name="fake_manufacture_name" pkg="amr_interop_bridge" type="fake_manufacture_name.py">
     <param name="manufacture_name" value="LexxPluss, Inc."/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_robot_model" pkg="interop_bridge" type="fake_robot_model.py">
+  <node name="fake_robot_model" pkg="amr_interop_bridge" type="fake_robot_model.py">
     <param name="robot_model" value="LexxHard"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_robot_serial_number" pkg="interop_bridge" type="fake_robot_serial_number.py">
+  <node name="fake_robot_serial_number" pkg="amr_interop_bridge" type="fake_robot_serial_number.py">
     <param name="robot_serial_number" value="0000002"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_base_robot_envelope" pkg="interop_bridge" type="fake_base_robot_envelope.py">
+  <node name="fake_base_robot_envelope" pkg="amr_interop_bridge" type="fake_base_robot_envelope.py">
     <param name="x" value="0.6"/>
     <param name="y" value="0.6"/>
     <param name="z" value="nan"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_operational_state" pkg="interop_bridge" type="fake_operational_state.py">
+  <node name="fake_operational_state" pkg="amr_interop_bridge" type="fake_operational_state.py">
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_location" pkg="interop_bridge" type="fake_location.py">
+  <node name="fake_location" pkg="amr_interop_bridge" type="fake_location.py">
     <param name="x" value="0.0"/>
     <param name="y" value="0.0"/>
     <param name="z" value="nan"/>
@@ -39,55 +39,55 @@
   </node>
 
   <!-- identity -->
-  <node name="fake_max_speed" pkg="interop_bridge" type="fake_max_speed.py">
+  <node name="fake_max_speed" pkg="amr_interop_bridge" type="fake_max_speed.py">
     <param name="max_speed" value="2.0"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_max_run_time" pkg="interop_bridge" type="fake_max_run_time.py">
+  <node name="fake_max_run_time" pkg="amr_interop_bridge" type="fake_max_run_time.py">
     <param name="max_run_time" value="6.0"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_emergency_contact_information" pkg="interop_bridge" type="fake_emergency_contact_information.py">
+  <node name="fake_emergency_contact_information" pkg="amr_interop_bridge" type="fake_emergency_contact_information.py">
     <param name="emergency_contact_information" value="+81 X-XXXX-XXXX"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_charger_type" pkg="interop_bridge" type="fake_charger_type.py">
+  <node name="fake_charger_type" pkg="amr_interop_bridge" type="fake_charger_type.py">
     <param name="charger_type" value="LexxHard Charger"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_support_vendor_name" pkg="interop_bridge" type="fake_support_vendor_name.py">
+  <node name="fake_support_vendor_name" pkg="amr_interop_bridge" type="fake_support_vendor_name.py">
     <param name="support_vendor_name" value="LexxPluss, Inc."/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_support_vendor_contact_information" pkg="interop_bridge" type="fake_support_vendor_contact_information.py">
+  <node name="fake_support_vendor_contact_information" pkg="amr_interop_bridge" type="fake_support_vendor_contact_information.py">
     <param name="support_vendor_contact_information" value="https://forms.gle/WZVdtsBv3Teg3QnD8"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_product_documentation" pkg="interop_bridge" type="fake_product_documentation.py">
+  <node name="fake_product_documentation" pkg="amr_interop_bridge" type="fake_product_documentation.py">
     <param name="product_documentation" value="https://lexxpluss.com/"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_thumnail_image" pkg="interop_bridge" type="fake_thumnail_image.py">
+  <node name="fake_thumnail_image" pkg="amr_interop_bridge" type="fake_thumnail_image.py">
     <param name="thumnail_image" value="https://storage.googleapis.com/production-os-assets/assets/c776796f-4edf-414a-b518-b3fda6cb6405"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_cargo_type" pkg="interop_bridge" type="fake_cargo_type.py">
+  <node name="fake_cargo_type" pkg="amr_interop_bridge" type="fake_cargo_type.py">
     <param name="cargo_type" value="cart"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_cargo_max_volume" pkg="interop_bridge" type="fake_cargo_max_volume.py">
+  <node name="fake_cargo_max_volume" pkg="amr_interop_bridge" type="fake_cargo_max_volume.py">
     <param name="x" value="0.3"/>
     <param name="y" value="0.3"/>
     <param name="z" value="0.2"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_cargo_max_weight" pkg="interop_bridge" type="fake_cargo_max_weight.py">
+  <node name="fake_cargo_max_weight" pkg="amr_interop_bridge" type="fake_cargo_max_weight.py">
     <param name="cargo_max_weight" value="300"/>
     <param name="publish_rate" value="1"/>
   </node>
 
   <!-- status -->
-  <node name="fake_velocity" pkg="interop_bridge" type="fake_velocity.py">
+  <node name="fake_velocity" pkg="amr_interop_bridge" type="fake_velocity.py">
     <param name="linear" value="0.5"/>
     <param name="angular_x" value="0.0"/>
     <param name="angular_y" value="0.0"/>
@@ -95,23 +95,23 @@
     <param name="angular_w" value="1.0"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_battery_percentage" pkg="interop_bridge" type="fake_battery_percentage.py">
+  <node name="fake_battery_percentage" pkg="amr_interop_bridge" type="fake_battery_percentage.py">
     <param name="battery_percentage" value="80"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_remaining_run_time" pkg="interop_bridge" type="fake_remaining_run_time.py">
+  <node name="fake_remaining_run_time" pkg="amr_interop_bridge" type="fake_remaining_run_time.py">
     <param name="remaining_run_time" value="7.0"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_load_percentage_still_avaiable" pkg="interop_bridge" type="fake_load_percentage_still_avaiable.py">
+  <node name="fake_load_percentage_still_avaiable" pkg="amr_interop_bridge" type="fake_load_percentage_still_avaiable.py">
     <param name="lower" value="20"/>
     <param name="upper" value="110"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_error_codes" pkg="interop_bridge" type="fake_error_codes.py">
+  <node name="fake_error_codes" pkg="amr_interop_bridge" type="fake_error_codes.py">
     <param name="publish_rate" value="0.2"/>
   </node>
-  <node name="fake_path_and_destinations" pkg="interop_bridge" type="fake_path_and_destinations.py">
+  <node name="fake_path_and_destinations" pkg="amr_interop_bridge" type="fake_path_and_destinations.py">
     <param name="path_lower" value="0"/>
     <param name="path_upper" value="10"/>
     <param name="max_seconds" value="9000"/> <!-- 15min * 60sec/min -->
@@ -119,7 +119,7 @@
   </node>
 
   <!-- websocket client -->
-  <node name="interop_bridge" pkg="interop_bridge" type="interop_bridge.py">
+  <node name="amr_interop_bridge" pkg="amr_interop_bridge" type="amr_interop_bridge.py">
     <param name="url" value="$(arg url)"/>
   </node>
 </launch>

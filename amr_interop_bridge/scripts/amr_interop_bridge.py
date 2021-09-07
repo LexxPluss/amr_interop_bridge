@@ -21,11 +21,11 @@ from std_msgs.msg import String
 from std_msgs.msg import Float64
 from geometry_msgs.msg import Point
 from geometry_msgs.msg import Quaternion
-from interop_msgs.msg import Location
-from interop_msgs.msg import Velocity
-from interop_msgs.msg import ErrorCodes
-from interop_msgs.msg import PredictedLocation
-from interop_msgs.msg import PredictedLocations
+from amr_interop_msgs.msg import Location
+from amr_interop_msgs.msg import Velocity
+from amr_interop_msgs.msg import ErrorCodes
+from amr_interop_msgs.msg import PredictedLocation
+from amr_interop_msgs.msg import PredictedLocations
 
 
 def on_message(ws, message):
@@ -205,7 +205,7 @@ def destinations_callback(msg):
             status["destinations"].append(path)
 
 if __name__ == "__main__":
-    rospy.init_node("interop_bridge")
+    rospy.init_node("amr_interop_bridge")
 
     url = rospy.get_param("~url", "ws://localhost/")
 

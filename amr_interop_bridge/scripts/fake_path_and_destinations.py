@@ -4,8 +4,8 @@
 import rospy
 from std_msgs.msg import String
 from geometry_msgs.msg import Quaternion
-from interop_msgs.msg import PredictedLocation
-from interop_msgs.msg import PredictedLocations
+from amr_interop_msgs.msg import PredictedLocation
+from amr_interop_msgs.msg import PredictedLocations
 import random
 import uuid
 from datetime import datetime, timedelta

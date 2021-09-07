@@ -3,7 +3,7 @@
 
 import rospy
 from geometry_msgs.msg import Quaternion
-from interop_msgs.msg import Velocity
+from amr_interop_msgs.msg import Velocity
 
 if __name__ == "__main__":
     rospy.init_node("fake_velocity")

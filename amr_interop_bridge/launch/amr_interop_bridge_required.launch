@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="url" default="ws://localhost:3000"/>
+
+  <!-- required -->
+  <node name="fake_uuid" pkg="amr_interop_bridge" type="fake_uuid.py"/>
+  <node name="fake_manufacture_name" pkg="amr_interop_bridge" type="fake_manufacture_name.py"/>
+  <node name="fake_robot_model" pkg="amr_interop_bridge" type="fake_robot_model.py"/>
+  <node name="fake_robot_serial_number" pkg="amr_interop_bridge" type="fake_robot_serial_number.py"/>
+  <node name="fake_base_robot_envelope" pkg="amr_interop_bridge" type="fake_base_robot_envelope.py"/>
+  <node name="fake_operational_state" pkg="amr_interop_bridge" type="fake_operational_state.py"/>
+  <node name="fake_location" pkg="amr_interop_bridge" type="fake_location.py"/>
+
+  <!-- websocket client -->
+  <node name="amr_interop_bridge" pkg="amr_interop_bridge" type="amr_interop_bridge.py">
+    <param name="url" value="$(arg url)"/>
+  </node>
+</launch>
