@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>amr_interop_bridge</name>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <description>The AMR interop_bridge package</description>
   <maintainer email="yasuyuki.miura@lexxpluss.com">MIURA Yasuyuki</maintainer>
   <license>BSD</license>
@@ -15,7 +15,4 @@
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>amr_interop_msgs</depend>
-
-  <depend>python-pytz-pip</depend>
-  <depend>python-websocket</depend>
 </package>
