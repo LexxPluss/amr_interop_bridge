@@ -94,8 +94,8 @@ def support_vendor_contact_information_callback(msg):
 def product_documentation_callback(msg):
     identity["productDocumentation"] = msg.data
 
-def thumnail_image_callback(msg):
-    identity["thumnailImage"] = msg.data
+def thumbnail_image_callback(msg):
+    identity["thumbnailImage"] = msg.data
 
 def cargo_type_callback(msg):
     identity["cargoType"] = msg.data
@@ -224,7 +224,7 @@ if __name__ == "__main__":
     rospy.Subscriber("support_vendor_name", String, support_vendor_name_callback)
     rospy.Subscriber("support_vendor_contact_information", String, support_vendor_contact_information_callback)
     rospy.Subscriber("product_documentation", String, product_documentation_callback)
-    rospy.Subscriber("thumnail_image", String, thumnail_image_callback)
+    rospy.Subscriber("thumbnail_image", String, thumbnail_image_callback)
     rospy.Subscriber("cargo_type", String, cargo_type_callback)
     rospy.Subscriber("cargo_max_volume", Point, cargo_max_volume_callback)
     rospy.Subscriber("cargo_max_weight", String, cargo_max_weight_callback)

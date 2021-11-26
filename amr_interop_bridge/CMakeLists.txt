@@ -38,7 +38,7 @@ catkin_install_python(PROGRAMS
   scripts/fake_robot_serial_number.py
   scripts/fake_support_vendor_contact_information.py
   scripts/fake_support_vendor_name.py
-  scripts/fake_thumnail_image.py
+  scripts/fake_thumbnail_image.py
   scripts/fake_uuid.py
   scripts/fake_velocity.py
   scripts/amr_interop_bridge.py
