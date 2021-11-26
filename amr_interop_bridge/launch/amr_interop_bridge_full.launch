@@ -67,8 +67,8 @@
     <param name="product_documentation" value="https://lexxpluss.com/"/>
     <param name="publish_rate" value="1"/>
   </node>
-  <node name="fake_thumnail_image" pkg="amr_interop_bridge" type="fake_thumnail_image.py">
-    <param name="thumnail_image" value="https://storage.googleapis.com/production-os-assets/assets/c776796f-4edf-414a-b518-b3fda6cb6405"/>
+  <node name="fake_thumbnail_image" pkg="amr_interop_bridge" type="fake_thumbnail_image.py">
+    <param name="thumbnail_image" value="https://storage.googleapis.com/production-os-assets/assets/c776796f-4edf-414a-b518-b3fda6cb6405"/>
     <param name="publish_rate" value="1"/>
   </node>
   <node name="fake_cargo_type" pkg="amr_interop_bridge" type="fake_cargo_type.py">
