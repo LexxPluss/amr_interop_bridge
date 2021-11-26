@@ -12,7 +12,7 @@ if __name__ == "__main__":
     publish_rate = rospy.get_param("~publish_rate", 1)
 
     loop_rate = rospy.Rate(publish_rate)
-    robot_serial_number_msg = str(robot_serial_number)
+    robot_serial_number_msg = robot_serial_number
     while not rospy.is_shutdown():
         pub.publish(robot_serial_number_msg)
         loop_rate.sleep()
